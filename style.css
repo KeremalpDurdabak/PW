@@ -91,10 +91,28 @@ ul {
 	padding: 25px;
 }
 
-#info h1 {
+header#contact{
+
+	font-size: 3em;
+  	text-align: center;
+
 }
 
-#info h2 {
+.rps > a:visited{
+	color: white;
+}
+
+.rps {
+	text-align: center;
+	margin: 10%;
+
 }
 
 
+.projectList{
+	list-style: none;
+}
+
+.rps > a{
+	text-decoration: none;
+}
