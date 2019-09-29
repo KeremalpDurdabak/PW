@@ -77,13 +77,20 @@ ul {
 
 #content {
 	margin-bottom: 40%;
+	margin-top: 220px;
+
 }
 
 
 
 #info {
 	text-align: center;
-	margin: 20%;
+	margin-top: 500px;
+    height: 650px;
+    text-align: center;
+    padding: 8%;
+    display: block;
+    position: absolute;
 }
 
 #info header {
