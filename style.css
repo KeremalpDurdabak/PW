@@ -105,7 +105,6 @@ header#contact{
 .rps {
 	text-align: center;
 	margin: 10%;
-
 }
 
 .projectList{
@@ -115,4 +114,17 @@ header#contact{
 .rps > a{
 	text-decoration: none;
 	color: white;
+
+}
+
+#rpsProject{
+	width:20%; 
+    height:auto; 
+    border: 1px solid yellow;
+    padding: 3px;
+
+}
+
+#rpsText{
+	margin: 2px;
 }
