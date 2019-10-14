@@ -1,54 +1,65 @@
 <!DOCTYPE html>
-<html>	
-	<head>
-		<link rel="icon" href="initial2.ico">
-		<title>Kerem Durdabak</title>
-		<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-    	<link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Kerem Durdabak</title>
+    <link rel="icon" href="initial.ico">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
 
-	</head>
+    <div class="container">
+        <nav>
+            <ul class="navList">
 
+                <li class="navElement" id="logo">
+                     <a href="index.html"><img src="logo.jpg" alt=""></a>
+                </li>
 
+                 <li class="navElement" id="home">
+                    <a href="index.html">Home</a>
+                 </li>
 
-	<body>
-		
-		<div id="navbar">
-			
-			<ul>
-				<li><a href="index.html"><img src="logo.jpg" class="logo"></a></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="#info">About</a></li>
-				<li><a href="projects.html">Projects</a></li>
-			</ul>
+                 <li class="navElement" id="contact">
+                        <a href="contact.html">Contact</a>
+                </li>
 
-		</div>
+                 <li class="navElement" id="about">
+                    <a href="index.html#middle-link">About</a>
+                 </li>
 
+                 </li>
+                <li class="navElement" id="projects">
+                    <a href="projects.html">Projects</a>
+                 </li>
+             </ul>
+        </nav>
 
-		<div id="content">
-			
-			
-			<h1>A Software Engineering student, <br> who wants to improve in web development.</h1>
-			<a href="#info">Learn More.</a>
+        <div class="content-home">
 
+            <div class="top-page">
+                <h1 class="title">A Software Engineering student, <br>
+                        who wants to improve in web development.</h1>
+                    
+                <a href="#middle-link" class="to-middle-link">Learn More.</a> 
+            </div>
 
-		</div>
-
-		<div id="info">
-			<header>Hi!👋</header>
-			<h1>My name is Kerem and I'm trying my best! </h1>
-
-			<h2>I'm a Sophomore Software Engineering student who lives in Izmir/Turkey, I'm currently in a journey of becoming a web developer. I will share my projects on this page, you can click Projects tab to check out the projects that I'm currently working.</h2>
-
-		</div>
-
-
-		<footer>© 2019 Kerem Durdabak</footer>
-
-
-		<script type="text/javascript" src="main.js"></script>
-	</body>
-
+            <div class="middle-page" id="middle-link">
+                <h1 class="middle-content" id="middle-greet">Hi!👋</h1>
+                <h2 class="middle-content" id="middle-title">My name is Kerem and I'm trying my best!</h2>
+                <p class="middle-content" id="middle-p">I'm a Sophomore Software Engineering student who lives in Izmir/Turkey,
+                    I'm currently in a journey of becoming a web developer.
+                    I will share my projects on this page,
+                    you can click Projects tab to check out
+                    the projects that I'm currently working.</p>
+            </div>
+        </div>
+    </div>
+    <footer>© 2019 Kerem Durdabak</footer>
+    <script src="main.js"></script>
+    
+</body>
 </html>

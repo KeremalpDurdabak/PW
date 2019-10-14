@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Projects</title>
-	<link type="text/css" rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects</title>
+    <link rel="icon" href="initial.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
 </head>
 <body>
+    <div class="container">
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+            $("#nav-placeholder").load("navbar.html");
+            });
+        </script>
+
+        <div class="content-projects">
+
+            <div id="project-1">
+                <a href="projects/rpsProject/index.html">
+                    <img src="rpsProject.png" alt="">
+                    <p>Rock Paper Scissors</p>
+                </a>
+            </div>
 
 
-<div id="navbar">
-			
-			<ul>
-				<li><a href="index.html"><img src="logo.jpg" class="logo"></a></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="index.html">About</a></li>
-				<li><a href="projects.html">Projects</a></li>
-			</ul>
+        </div>
 
-		</div>
 
-		<ul class="projectList">
-			<li>
-				<div class="rps"><a href="projects/index.html">
-					<img id ="rpsProject" src="rpsProject.png">
-					<p id="rpsText">Rock Paper Scissors</p>
-				</a></div>
-			</li>
-		</ul>
-	
-	<footer>© 2019 Kerem Durdabak</footer>
-	<script type="text/javascript" src="main.js"></script>
+    </div>
+    
+        <footer>© 2019 Kerem Durdabak</footer>
+        <script src="main.js"></script>
 </body>
 </html>

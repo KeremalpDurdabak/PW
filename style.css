@@ -1,130 +1,209 @@
-html::-webkit-scrollbar {
- width: 0 !important
+*{
+    margin: 0;
+    padding: 0;
+  
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
-html {
-	scroll-behavior: smooth;
+html::-webkit-scrollbar {
+    width: 0 !important
+   }
+   
+   html {
+       scroll-behavior: smooth;
+   }
+
+.navList{
+    list-style: none;
+    display: flex;
+}
+
+.navList > li > a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+}
+
+.navElement{
+    padding: 10px;
+    flex: 1;
+}
+
+#logo{
+    flex-basis: 70%; 
+    filter: invert(100%);
+}
+
+#logo img{
+    max-width: 300px;;
+    
+}
+
+.container nav > .navList{
+    padding: 10px;
+}
+
+.navElement:nth-child(n+2){
+    margin-top: 10px;
 }
 
 body{
-	background: #0F2027;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-	color: white;
-	font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
 }
 
 
-#navbar li a {
-	color: white;
-	text-decoration: none;
+.top-page {
+    display: grid;
+    grid-template-columns: 0.5fr;
+    grid-template-rows: 4fr 1fr 0.5fr 5fr;
+    grid-template-areas: 
+    "." "title" "to-middle-link" ".";
+    grid-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+
+    
+}
+
+
+.top-page > h1 {
+    color: white;
+    grid-area: title;
+    text-align: center;
+    font-size: 35px;
 
 }
 
-#navbar li {
-	list-style: none;
-	display: inline;
-	margin: 20px;
-	padding: 20px;
-
+.top-page > a {
+    color: white;
+    background: #ff7a7a;
+    font-family: Raleway;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 10px;
+    grid-area: to-middle-link;
+    text-align: center;
+    margin: 8px;
+    width: 130px;
+    height: 28px;
+    
 }
 
-footer {
-	font-family: 'Roboto Thin';
+footer{
+    font-family: 'Roboto Thin';
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
     bottom: 0px;
+    margin-left: 5px;
 }
 
-#navbar .logo {
-    display: inline-block;
-    position: relative;
-    height: 12%;
-    width: 12%;
-    filter: invert(100%);
-    float: left;
+.middle-page{
+    display: grid;
+    grid-template-columns: 0.6fr;
+    grid-template-rows: 3fr 1fr 0.5fr 1fr 4fr;
+    grid-template-areas: "." "middle-greet" "middle-title" "middle-p" "."; 
+    justify-items: center;
+    justify-content: center;
+    grid-gap:10px;
+
+}
+
+#middle-greet{
+    grid-area: middle-greet;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+#middle-title{
+    grid-area: middle-title;
+    font-size: 1.9em;
+}
+
+#middle-p{
+    grid-area: middle-p;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
 }
 
 
-ul {
-    text-align: right;
+.contact-links figure a img {
+    max-width:100%;
+    height:75px;
+}
+
+.contact-links {
+    display: flex;
+}
+
+.content-contact{
+    display: grid;
+    grid-template-columns: 0.3fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+    grid-template-areas: "." "contact-title" "contact-descr" "contact-logo";
+    justify-items: center;
+    justify-content: center;
+}
+
+#contact-title{
+    grid-area: contact-title;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+#contact-descr{
+    grid-area: contact-descr;
     font-size: 30px;
+    font-family: 'Roboto-thin';
+    font-weight: lighter;
 }
 
-
-#content h1 {
-	text-align: center;
-	font-size: 35px;
-	margin-top: 17%;
-
-}
-#content a {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	color: white;
-	background: #ff7a7a;
-	width: 8%;
-	margin: auto;
-	border-radius: 5px;
-	font-size: 25px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-family: Raleway
+#contact-logo{
+    grid-area: contact-logo;
 }
 
-#content {
-	margin-bottom: 40%;
+#contact-logo > figure {
+    margin: 0px 20px;
+    text-align: center;
 }
 
-
-
-#info {
-	text-align: center;
-	margin: 20%;
-}
-
-#info header {
-	font-size: 50px;
-	padding: 25px;
-}
-
-header#contact{
-
-	font-size: 3em;
-  	text-align: center;
+.content-projects{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+     ". . . . ."
+     ". . project-1 . ." 
+     ". . . . ." 
+     ". . . . ." 
+     ". . . . .";
+    justify-items: center;
+    justify-content: center;
 
 }
 
-.rps > a:visited{
-	color: white;
-}
-
-.rps {
-	text-align: center;
-	margin: 10%;
-}
-
-.projectList{
-	list-style: none;
-}
-
-.rps > a{
-	text-decoration: none;
-	color: white;
-
-}
-
-#rpsProject{
-	width:20%; 
-    height:auto; 
+#project-1 img{
+    max-width:100%;
+    height:180px;
     border: 1px solid yellow;
     padding: 3px;
-
 }
 
-#rpsText{
-	margin: 2px;
+#project-1 a {
+    text-decoration: none;
+}
+
+#project-1 p{
+    font-size: 30px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top:2px;
+}
+
+#project-1 {
+grid-area: project-1;
 }

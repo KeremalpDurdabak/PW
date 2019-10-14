@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-		<title>Contact</title>
-	<link type="text/css" rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="icon" href="initial.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
 </head>
 <body>
+    <div class="container">
+        <div id="nav-placeholder"></div>
+        <script>
+            $(function(){
+            $("#nav-placeholder").load("navbar.html");
+            });
+        </script>
 
-	<div id="navbar">
-			
-			<ul>
-				<li><a href="index.html"><img src="logo.jpg" class="logo"></a></li>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="index.html">About</a></li>
-				<li><a href="projects.html">Projects</a></li>
-			</ul>
+        <div class="content-contact">
+            <h1 id="contact-title" >Contact</h1>
+            <h2 id="contact-descr">You can reach out to me using the links below.</h2>
+            <section id="contact-logo" class="contact-links">
+                <figure> <a href="https://www.facebook.com/KeremDurdabak">
+                    <img src="/contact icons/facebook.png" alt="">
+                </a></figure>
 
-		</div>
+                <figure> <a href="mailto: keremalp.durdabak@gmail.com">
+                    <img src="/contact icons/mail.png" alt="">
+                </a></figure>
 
+                <figure> <a href="https://www.linkedin.com/in/keremalpdurdabak/">
+                    <img src="contact icons/linkedin.png" alt="">
+                </a></figure>
 
-		<div id="content">
-			
-			<header id="contact">Contact</header>
-
-			<h1>You can reach out to me using the links below.</h1>
-
-
-
-		</div>
+                <figure> <a href="https://github.com/KeremalpDurdabak">
+                    <img src="contact icons/github.png" alt="">
+                </a></figure>
+            </section>
 
 
-		
-		<footer>© 2019 Kerem Durdabak</footer>
-
+        </div>
+    </div>
+    <footer>© 2019 Kerem Durdabak</footer>
+    <script src="main.js"></script>
 </body>
 </html>
