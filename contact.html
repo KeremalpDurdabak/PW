@@ -7,29 +7,47 @@
     <title>Contact</title>
     <link rel="icon" href="initial.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 
 </head>
 <body>
     <div class="container">
-        <div id="nav-placeholder"></div>
-        <script>
-            $(function(){
-            $("#nav-placeholder").load("navbar.html");
-            });
-        </script>
+        <nav>
+            <ul class="navList">
+
+                <li class="navElement" id="logo">
+                     <a href="index.html"><img src="logo.jpg" alt=""></a>
+                </li>
+
+                 <li class="navElement" id="home">
+                    <a href="index.html">Home</a>
+                 </li>
+
+                 <li class="navElement" id="contact">
+                        <a href="contact.html">Contact</a>
+                </li>
+
+                 <li class="navElement" id="about">
+                    <a href="index.html#middle-link">About</a>
+                 </li>
+
+                 </li>
+                <li class="navElement" id="projects">
+                    <a href="projects.html">Projects</a>
+                 </li>
+             </ul>
+        </nav>
 
         <div class="content-contact">
             <h1 id="contact-title" >Contact</h1>
             <h2 id="contact-descr">You can reach out to me using the links below.</h2>
             <section id="contact-logo" class="contact-links">
                 <figure> <a href="https://www.facebook.com/KeremDurdabak">
-                    <img src="/contact icons/facebook.png" alt="">
+                    <img src="contact icons/facebook.png" alt="">
                 </a></figure>
 
                 <figure> <a href="mailto: keremalp.durdabak@gmail.com">
-                    <img src="/contact icons/mail.png" alt="">
+                    <img src="contact icons/mail.png" alt="">
                 </a></figure>
 
                 <figure> <a href="https://www.linkedin.com/in/keremalpdurdabak/">
