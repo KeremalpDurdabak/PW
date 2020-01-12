@@ -107,7 +107,7 @@ var controller = {
             this.guesses++;
             var hit = model.fire(location);
             if(hit && model.shipsSunk === model.numShips){
-                view.displayMessage("You sank all my battleships, in" + this.guesses + "guesses");
+                view.displayMessage("You sank all my battleships, in " + this.guesses + " guesses");
             }
         }
     }
