@@ -173,31 +173,38 @@ footer{
 
 .content-projects{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
-     ". . . . ."
-     ". . project-1 . ." 
-     ". . . . ." 
-     ". . . . ." 
-     ". . . . .";
+     ". . . . . ."
+     ". . project-1 project-2 . ." 
+     ". . . . . ." 
+     ". . . . . ." 
+     ". . . . . .";
     justify-items: center;
     justify-content: center;
-
+    grid-column-gap: 30px;
 }
 
-#project-1 img{
+#project-1 img , #project-2 img{
     max-width:100%;
     height:180px;
-    border: 1px solid yellow;
-    padding: 3px;
+    padding: 4px;
 }
 
-#project-1 a {
+ #project-1 img{
+    border: 1px solid yellow;
+ }
+
+#project-2 img{
+    border: 1px solid rgb(102, 255, 102);
+}
+
+#project-1 a , #project-2 a {
     text-decoration: none;
 }
 
-#project-1 p{
+#project-1 p , #project-2 p {
     font-size: 30px;
     font-weight: lighter;
     text-align: center;
@@ -207,3 +214,7 @@ footer{
 #project-1 {
 grid-area: project-1;
 }
+
+#project-2 {
+grid-area: project-2;
+ }
