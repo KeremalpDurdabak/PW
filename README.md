@@ -1,2 +1,2 @@
 # KeremWebsite
-This is the codebase for my personal website
+A codebase for my personal website
