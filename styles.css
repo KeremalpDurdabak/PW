@@ -59,7 +59,6 @@ button:hover {
 
 .header-frame {
   max-width: 350px;
-  min-width: 300px;
 }
 
 h1 {
@@ -94,7 +93,6 @@ a:hover {
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
-  min-width: 300px;
 }
 .img-frame img {
   position: absolute;
