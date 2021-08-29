@@ -41,7 +41,7 @@ button:hover {
   padding: 5px;
   max-width: 650px;
 }
-@media (max-width: 600px) {
+@media (max-width: 610px) {
   .container {
     padding: 20px;
   }
@@ -54,7 +54,7 @@ button:hover {
   flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 610px) {
   .header-section {
     display: flex;
     align-items: center;
@@ -131,7 +131,7 @@ a:hover {
   font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 610px) {
   .toggler {
     text-align: center;
   }
@@ -143,6 +143,9 @@ a:hover {
   }
   .links {
     text-align: center;
+  }
+  .container {
+    margin: 30px;
   }
 }
 
