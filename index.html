@@ -1,73 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keremalp Durdabak</title>
-    <link rel="icon" type="image/png" href="assets/favicon.svg"/>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="vsc-initialized" cz-shortcut-listen="true">
+    <link rel="icon" type="image/png" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="vsc-initialized" cz-shortcut-listen="true">
     <div class="container">
       <div class="header-section">
         <div class="header-frame">
           <h1>Keremalp Durdabak</h1>
-          <h2>Software Engineering <br> Student at Yasar University</h2>
+          <h2>
+            Software Engineering <br />
+            Student at Yasar University
+          </h2>
         </div>
         <div class="img-frame">
-          <img id="propic" src="./assets/kerem.png" alt="">
+          <img id="propic" src="./assets/kerem.png" alt="" />
         </div>
       </div>
       <div class="links">
-        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/keremdurdabak" style="color: #1DA1F2;">Twitter</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/KeremalpDurdabak" style="color: #333;">Github</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/keremalpdurdabak" style="color: #0072b1;">Linkedin</a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://twitter.com/keremdurdabak"
+          style="color: #1da1f2"
+          >Twitter</a
+        >
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/KeremalpDurdabak"
+          style="color: #333"
+          >Github</a
+        >
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/keremalpdurdabak"
+          style="color: #0072b1"
+          >Linkedin</a
+        >
       </div>
       <div class="bio-switcher">
         <div class="toggler">
-          <button id="about" class="show">About</button>
-          <button id="projects">Projects</button>
-          <button id="contact">Contact</button>
+          <a href="#bio-about"
+            ><button id="about" class="show">About</button></a
+          >
+          <a href="#bio-projects"><button id="projects">Projects</button></a>
+          <a href="#bio-contact"><button id="contact">Contact</button></a>
         </div>
-        <div class="bio about show">
-          Hello there. <br> My name is Keremalp and I'm a Senior Software Engineering Student at <a href="https://www.yasar.edu.tr/" style="color: #00529C;">Yasar University</a>.
-          <br style="display: block;
-          margin: -7.5px 0;">I'm doing my best to improve myself in Software Development and keep on learning new things in my field.
-          <br>
-          I believe that with technology, we can provide efficient solutions for today's important problems and make the world a better place.
+        <div class="bio about show" id="bio-about">
+          Hello there. <br />
+          My name is Keremalp and I'm a Senior Software Engineering Student at
+          <a href="https://www.yasar.edu.tr/" style="color: #00529c"
+            >Yasar University</a
+          >. <br style="display: block; margin: -7.5px 0" />I'm doing my best to
+          improve myself in Software Development and keep on learning new things
+          in my field.
+          <br />
+          I believe that with technology, we can provide efficient solutions for
+          today's important problems and make the world a better place.
         </div>
-        <div class="bio projects">
-            Here are some of the projects I've done so far.
-            <div id="hoopi-project">
-              <h4><a target="_blank" rel="noopener noreferrer" href="https://hoopi.tv/" style="color: #00ACEA;">Hoopi</a></h4>
-              <ul class="tech-stack">
-                <li>Next.js</li>
-                <li>Django</li>
-                <li>PostgreSQL</li>
-              </ul>  
-              Hoopi is a peer to peer video call platform for learning and teaching. You can learn better with 1:1 video calls, choose an instructor, schedule meetings ask anything to your instructor.
-            </div>
-            
-            <div id="dsi-project">
-              <h4><a target="_blank" rel="noopener noreferrer" href="https://dsi.gov.tr/" style="color: #009A4D;">DSI Mobile</a></h4>
-              <ul class="tech-stack">
-                <li>React Native</li>
-                <li>GeoServer</li>
-                <li>PostgreSQL</li>
-              </ul>
-              DSI Mobile is a closed network mobile application that displays DSI's important structures and facilities in a map and keeps employees up to date with the current events of the organization.
-            </div>
+        <div class="bio projects" id="bio-projects">
+          Here are some of the projects I've done so far.
+          <div id="hoopi-project">
+            <h4>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://hoopi.tv/"
+                style="color: #00acea"
+                >Hoopi</a
+              >
+            </h4>
+            <ul class="tech-stack">
+              <li>Next.js</li>
+              <li>Django</li>
+              <li>PostgreSQL</li>
+            </ul>
+            Hoopi is a peer to peer video call platform for learning and
+            teaching. You can learn better with 1:1 video calls, choose an
+            instructor, schedule meetings ask anything to your instructor.
+          </div>
+
+          <div id="dsi-project">
+            <h4>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dsi.gov.tr/"
+                style="color: #009a4d"
+                >DSI Mobile</a
+              >
+            </h4>
+            <ul class="tech-stack">
+              <li>React Native</li>
+              <li>GeoServer</li>
+              <li>PostgreSQL</li>
+            </ul>
+            DSI Mobile is a closed network mobile application that displays
+            DSI's important structures and facilities in a map and keeps
+            employees up to date with the current events of the organization.
+          </div>
         </div>
-        <div class="bio contact">
-            For business inquiries, you can reach me via email below: <br>
-            <a target="_blank" rel="noopener noreferrer" href="mailto: keremalp.durdabak@gmail.com" style="color: #EA4335;">keremalp.durdabak@gmail.com</a>
+        <div class="bio contact" id="bio-contact">
+          For business inquiries, you can reach me via email below: <br />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto: keremalp.durdabak@gmail.com"
+            style="color: #ea4335"
+            >keremalp.durdabak@gmail.com</a
+          >
         </div>
       </div>
     </div>
 
     <script src="./script.js"></script>
-  
-
-</body>
+  </body>
 </html>

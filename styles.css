@@ -3,13 +3,15 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body,
 button {
   background: #fff;
   color: #000;
-  font-family: Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 ::selection {
@@ -78,11 +80,11 @@ h2 {
 
 a {
   color: #96979c;
-  transition: text-shadow .2s;
+  transition: text-shadow 0.2s;
 }
 
 a:hover {
-  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
 }
 
 .links > a {
@@ -105,7 +107,6 @@ a:hover {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 100%;
-  
 }
 
 .links {
@@ -121,8 +122,7 @@ a:hover {
 }
 
 .toggler > button {
- height: 2rem;
-
+  height: 2rem;
 }
 
 .toggler .show {
@@ -168,7 +168,7 @@ h4 {
 }
 
 ul.tech-stack li {
-  display:inline;
+  display: inline;
   color: #96979c;
   font-weight: 400;
   margin-right: 5px;
@@ -176,7 +176,7 @@ ul.tech-stack li {
   transition: color 0.3s;
 }
 
-ul.tech-stack li:hover{
+ul.tech-stack li:hover {
   color: #000;
   transition: color 0.3s;
 }

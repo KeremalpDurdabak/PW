@@ -1,6 +1,6 @@
-let colors = ["#00b4d8", "#ffbe0b", "#12b35a", "#8338ec", "#3a86ff"];
+let colors = ["#00b4d8", "#F98404", "#12b35a", "#8338ec", "#3a86ff"];
 
-(function() {
+(function () {
   setBioEventListener();
 })();
 
@@ -13,7 +13,7 @@ function getRandomColor() {
 /* Bio Toggles */
 
 function setBioEventListener() {
-  Array.from(document.getElementsByTagName("button")).forEach(e => {
+  Array.from(document.getElementsByTagName("button")).forEach((e) => {
     e.addEventListener("click", bioToggle);
   });
 }
@@ -28,12 +28,12 @@ function bioToggle(e) {
 }
 
 function off(bioType) {
-  Array.from(document.getElementsByTagName("button")).forEach(btn => {
+  Array.from(document.getElementsByTagName("button")).forEach((btn) => {
     btn.style.borderColor = "#96979c";
     btn.style.color = "#96979c";
     btn.style.fontWeight = "normal";
   });
-  Array.from(document.getElementsByClassName("bio")).forEach(e => {
+  Array.from(document.getElementsByClassName("bio")).forEach((e) => {
     e.classList.remove("show");
   });
 }
