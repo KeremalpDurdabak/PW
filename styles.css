@@ -116,12 +116,6 @@ a:hover {
   padding: 0 12px 0 0;
 }
 
-@media (max-width: 600px) {
-  .links {
-    text-align: center;
-  }
-}
-
 .toggler {
   margin: 25px 0;
 }
@@ -143,6 +137,12 @@ a:hover {
   }
   .toggler button {
     margin: 5px;
+  }
+  h2 {
+    margin-bottom: 2rem;
+  }
+  .links {
+    text-align: center;
   }
 }
 
